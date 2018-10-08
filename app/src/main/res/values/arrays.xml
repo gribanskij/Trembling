@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="min_magnitude_labels">
+        <item>M>2</item>
+        <item>M>3</item>
+        <item>M>4</item>
+        <item>M>5</item>
+        <item>M>6</item>
+    </string-array>
+
+    <integer-array name="min_magnitude_value">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </integer-array>
+
+
+    <integer-array name="time_interval_value">
+        <item>6</item>
+        <item>12</item>
+        <item>24</item>
+        <item>168</item>
+        <item>720</item>
+        <item>8760</item>
+    </integer-array>
+
+    <string-array name="time_interval_labels">
+        <item>@string/h6_label</item>
+        <item>@string/h12_label</item>
+        <item>@string/h24_label</item>
+        <item>@string/week_label</item>
+        <item>@string/month_label</item>
+        <item>@string/year_label</item>
+    </string-array>
+
+    <string-array name="place_labels">
+        <item>@string/all_world</item>
+        <item>@string/my_location</item>
+    </string-array>
+
+
+</resources>

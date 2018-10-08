@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gribanskij.trembling">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:name=".app.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_trembling"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_trembling_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/ADMOB_APP_ID" />
+
+        <activity
+            android:name=".listView.mvp.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.Launcher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".mapView.mvp.MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:parentActivityName=".listView.mvp.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".forecast.mvp.ForecastActivity"
+            android:label="@string/title_activity_forecast"
+            android:launchMode="singleTop"
+            android:parentActivityName=".listView.mvp.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+
+        <receiver
+            android:name=".receiver.EarthquakeReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.gribanskij.trembling.start_service" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.show_notification" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".services.EarthquakeService"
+            android:exported="false"></service>
+    </application>
+
+</manifest>

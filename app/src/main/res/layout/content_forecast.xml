@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".forecast.mvp.ForecastActivity"
+    tools:showIn="@layout/activity_forecast">
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="3"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp"
+        android:text="@string/forecast_title"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/error_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="@string/error_find_place"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/map_forecast"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/layout_one_month"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="32dp"
+        android:paddingTop="8dp"
+        android:paddingRight="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30">
+
+            <TextView
+                android:id="@+id/value_one_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center"
+
+                android:textSize="24sp"
+                tools:text="12%" />
+
+            <ProgressBar
+                android:id="@+id/progressbar_one_month"
+                style="@android:style/Widget.ProgressBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/text_one_month"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+
+            android:layout_weight="70"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:text="@string/within_1_month"
+            android:textAllCaps="true"
+            android:textColor="@color/textColorEarthquakeDetails"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_one_year"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="32dp"
+        android:paddingTop="8dp"
+        android:paddingRight="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_one_month">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30">
+
+            <TextView
+                android:id="@+id/value_one_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center"
+                android:textSize="24sp"
+                tools:text="12%" />
+
+            <ProgressBar
+                android:id="@+id/progressbar_one_year"
+                style="@android:style/Widget.ProgressBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/text_one_year"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="70"
+            android:ellipsize="end"
+            android:text="@string/within_1_year"
+            android:textAllCaps="true"
+            android:textColor="@color/textColorEarthquakeDetails"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_three_years"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="32dp"
+        android:paddingTop="8dp"
+        android:paddingRight="32dp"
+        android:paddingBottom="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_one_year">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30">
+
+            <TextView
+                android:id="@+id/value_three_years"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center"
+                android:textSize="24sp"
+                tools:text="12%" />
+
+            <ProgressBar
+                android:id="@+id/progressbar_three_year"
+                style="@android:style/Widget.ProgressBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/text_three_years"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="70"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:text="@string/within_3_years"
+            android:textAllCaps="true"
+            android:textColor="@color/textColorEarthquakeDetails"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+    <fragment
+        android:id="@+id/map_forecast"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_three_years" />
+
+</android.support.constraint.ConstraintLayout>

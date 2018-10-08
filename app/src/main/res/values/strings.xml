@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">Trembling</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="error_loading_data">Error retrieving data</string>
+    <string name="error_find_place">Place not found</string>
+    <string name="probability">Probability</string>
+    <string name="title_activity_forecast">Forecasting</string>
+    <string name="hint_search">City search </string>
+    <string name="within_3_years">within 3 years</string>
+    <string name="within_1_year">within 1 year</string>
+    <string name="within_1_month">within 1 month</string>
+    <string name="forecast_title">The probability of a damaging
+        earthquake (magnitude 5 or higher) within a radius of 70
+        km from the selected location is:</string>
+    <string name="info_about">This application is created for timely informing
+        about the occurring earthquakes and estimating the probability of earthquakes
+        in a specific region.</string>
+
+    <string name="warning_service">Warning! This service may not work stably. If you do not get the result, try again later.</string>
+    <string name="no_data" translatable="false">-</string>
+    <string name="market_error">Could not open Android market, please check if the market app installed
+        or not. Try again later</string>
+    <string name="title_menu_about_forecast">About service</string>
+    <string name="action_map">Map</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok" translatable="false">OK</string>
+    <string name="magnitude_title">Min magnitude</string>
+    <string name="menu_item_info">About</string>
+    <string name="menu_item_rate_app">Rate app</string>
+    <string name="menu_item_notification">Notification</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="information_not_available">Information is not available</string>
+    <string name="notification_is_on">Notification is ON</string>
+    <string name="notification_is_off">Notification is OFF</string>
+    <string name="title_activity_list">Dashboard</string>
+    <string name="dialog_titel_warning">About service</string>
+
+
+    <!-- Preferences-->
+    <string name="time_interval_value" translatable="false">time_interval</string>
+    <string name="magnitude_value" translatable="false">mag_value</string>
+    <string name="place_lat_value" translatable="false">place_lat</string>
+    <string name="place_lon_value" translatable="false">place_lon</string>
+    <string name="place_radius_value" translatable="false">place_radius</string>
+    <string name="local_place" translatable="false">local_place</string>
+
+    <!-- For Dialogs-->
+    <string name="h6_label">6h</string>
+    <string name="h12_label">12h</string>
+    <string name="h24_label">24h</string>
+    <string name="week_label">Week</string>
+    <string name="month_label">Month</string>
+    <string name="year_label">Year</string>
+    <string name="empty_text">No events</string>
+    <string name="error_location_massage">Location error</string>
+    <string name="my_location">Specific location</string>
+    <string name="location">Location</string>
+    <string name="latitude" translatable="false">lat:</string>
+    <string name="longitude" translatable="false">lon:</string>
+    <string name="latitude_hint" translatable="false">latitude:</string>
+    <string name="longitude_hint" translatable="false">longitude:</string>
+    <string name="radius_hint" translatable="false">radius</string>
+    <string name="radius" translatable="false">radius(Km)</string>
+    <string name="all_world">All world</string>
+    <string name="location_device">Use devise location</string>
+    <string name="dialog_titel_time">Time interval</string>
+    <string name="dialog_titel_info">About app</string>
+    <string name="info_sources">Sources: https://www.openhazards.com, https://earthquake.usgs.gov</string>
+    <string name="info_source_forecast">Sources: https://www.openhazards.com</string>
+    <string name="about_authot">2018 by Dmitrij Gribanskij</string>
+    <string name="channel_name" translatable="false">Trembling</string>
+    <string name="channel_description" translatable="false">Notifications of earthquakes.</string>
+    <string name="notification_title">Earthquakes</string>
+
+
+    <string name="title_forecast">Forecasting</string>
+
+    <plurals name="numberOfEarthquakes">
+        <item quantity="one">%d event.</item>
+        <item quantity="other">%d events.</item>
+    </plurals>
+
+</resources>
+
+

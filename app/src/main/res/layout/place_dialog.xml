@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <CheckBox
+        android:id="@+id/my_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/location_device" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="@string/latitude" />
+
+        <EditText
+            android:id="@+id/lat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/latitude_hint"
+            android:inputType="numberDecimal|numberSigned"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="@string/longitude" />
+
+        <EditText
+            android:id="@+id/lon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:hint="@string/longitude_hint"
+            android:inputType="numberDecimal|numberSigned"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="@string/radius" />
+
+        <EditText
+            android:id="@+id/radius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:hint="@string/radius_hint"
+            android:inputType="number"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" />
+    </LinearLayout>
+
+
+</LinearLayout>
