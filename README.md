@@ -1,4 +1,4 @@
-# Trembling
+# Trembling - earthquakes around.
 Android app: JAVA - MVP - Google Map - Google AdMob
 
 # How to setup local environment
