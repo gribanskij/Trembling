@@ -39,6 +39,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="25"
+                    android:ellipsize="end"
+                    android:maxLines="1"
                     tools:text="24h" />
 
                 <Button
@@ -47,6 +49,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="25"
+                    android:ellipsize="end"
+                    android:maxLines="1"
                     tools:text="M > 3" />
 
                 <ImageButton

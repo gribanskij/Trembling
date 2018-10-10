@@ -414,7 +414,7 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
             FrameLayout layout = findViewById(R.id.ad_container);
             AdView adView = new AdView(this);
             adView.setAdSize(AdSize.SMART_BANNER);
-            adView.setAdUnitId(getString(R.string.BANNER_ID));
+            adView.setAdUnitId("ca-app-pub-2516270421259135/9041623299");
             layout.addView(adView);
             AdRequest adRequest = new AdRequest.Builder().build();
             adView.loadAd(adRequest);
